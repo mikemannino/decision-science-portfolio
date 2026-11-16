@@ -89,7 +89,8 @@
       <h2 id="methods">Behind the analysis: technical methodology</h2>
       <ol>
         <li><strong>Define the question:</strong> Examine complaint volume and reported issues for checking and savings accounts during January 2024–December 2025.</li>
-        <li><strong>Prepare the data:</strong> Clean and deduplicate CFPB records, validate complaint IDs and dates, and establish a consistent analytical dataset of 137,016 unique records.</li>
+        <li><strong>Prepare and validate the data:</strong> Import CFPB complaint records into SQLite, identify and correct duplicate records introduced during data ingestion, validate complaint IDs and dates, and establish a consistent analytical dataset of 137,016 unique records.
+</li>
         <li><strong>Investigate with SQL and Python:</strong> Aggregate complaints by month, company, and issue; validate totals; and compare institution-specific patterns.</li>
         <li><strong>Visualize findings:</strong> Export aggregated datasets and build a Tableau Public dashboard to communicate the trends.</li>
         <li><strong>Translate evidence into action:</strong> Identify follow-up analyses that can test explanations rather than assume a cause.</li>
